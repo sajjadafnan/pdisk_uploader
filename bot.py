@@ -7,11 +7,11 @@ import requests
 from bs4 import BeautifulSoup
 import re
 
-API_ID = environ.get('API_ID', '6')
-API_HASH = environ.get('API_HASH', 'eb06d4abfb49dc3eeb1aeb98ae0f581e')
+API_ID = environ.get('API_ID', '4029928')
+API_HASH = environ.get('API_HASH', '99dae01a51f441a77499e01ab08ebdd0')
 BOT_TOKEN = environ.get('BOT_TOKEN')
 PDISK_API_KEY = environ.get('PDISK_API_KEY')
-CHANNEL = environ.get('CHANNEL', 'MyTestBotZ')
+CHANNEL = environ.get('CHANNEL', 'KayiChat_Official')
 bot = Client('pdisk bot',
              api_id=API_ID,
              api_hash=API_HASH,
@@ -144,7 +144,7 @@ async def remove_username(new_List):
 async def addFooter(str):
     footer = """
 ━━━━━━━━━━━━━━━
-⦿ Made With♥️BY @OO7ROBot
+⦿ Made With♥️BY @bamsibyrek
 ━━━━━━━━━━━━━━━
 ✪ »JOIN CHANNEL ➡️ t.me/""" + CHANNEL
     return str + footer
